@@ -1,0 +1,36 @@
+LEVANTAMIENTO DE REQUISITOS – SISTEMA DE GESTIÓN PARA LABORATORIO QUÍMICO
+
+REQUISITOS FUNCIONALES:
+
+1. Login:
+   - El sistema debe permitir el acceso con usuario y contraseña.
+   - Debe haber al menos dos tipos de usuario: Administrador (Profesor) y Estudiantes.
+   - Los administradores pueden gestionar usuarios, inventario y ver historial completo.
+   - Los Estudiantes solo pueden consultar información.
+
+2. Inventario:
+   - El sistema debe permitir registrar insumos, reactivos y materiales.
+   - Cada ítem debe tener nombre, cas, formula, unidad de medida, cantidad actual, fecha de ingreso, vencimiento.
+   - El sistema debe alertar cuando un insumo esté cerca de vencer o esté bajo stock mínimo.
+   - Debe permitir consultar información sobre la Ficha de Seguridad de cada elemento con los 16 puntos.
+   - Cada elemento debe tener información actualizada y contar con sus respectivos pictogramas
+   - Cada Reactivo debe tener su matriz de compatibilidad.
+
+3. Kardex:
+   - El sistema debe registrar mediante un formulario cada entrada y salida del inventario.
+   - Cada movimiento debe tener fecha, cantidad, tipo (entrada/salida), responsable, clase y observación.
+   - Debe permitir la exportación del historial en Excel o PDF.
+   - Al momento de registrar una entrada o salida, debe aumentar o disminuir el stock total.
+
+REQUISITOS NO FUNCIONALES:
+
+1. Seguridad:
+   - Contraseñas encriptadas.
+   - Control de sesiones activas y cierre automático por inactividad.
+
+2. Usabilidad:
+   - Interfaz simple, intuitiva, adaptable a pantallas móviles.
+   - Menú lateral para navegación entre módulos.
+
+3. Rendimiento:
+   - El sistema debe responder en menos de 2 segundos ante cualquier acción básica.
